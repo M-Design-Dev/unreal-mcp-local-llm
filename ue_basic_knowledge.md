@@ -1,4 +1,4 @@
-**Unreal Engine Basic Knowledge for MCP**
+# Unreal Engine Basic Knowledge for MCP
 
 General Unreal Engine knowledge intended to be supplied to a local LLM through RAG when using Unreal MCP.
 
@@ -6,7 +6,7 @@ This document contains stable concepts such as coordinate conventions, Actor/Com
 
 It is not a Tool catalogue and does not replace live Unreal MCP Tool Search or verified Recipes.
 
-
+___
 Version: 1.0
 Purpose: Provide stable Unreal Engine concepts that help a local LLM interpret Unreal MCP tasks correctly without replacing live MCP schema discovery or verified Recipes.
 
@@ -17,7 +17,7 @@ It is not an exhaustive list of Unreal MCP capabilities.
 
 Live Unreal MCP registry and schemas remain authoritative for current
 tools and argument structures.
-
+___
 
 **1. Unreal Engine Coordinate System**
 
