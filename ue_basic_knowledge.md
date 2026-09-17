@@ -1,9 +1,14 @@
 **Unreal Engine Basic Knowledge for MCP**
 
-Version: 1.0\
-Purpose: Provide stable Unreal Engine concepts that help a local LLM
-interpret Unreal MCP tasks correctly without replacing live MCP schema
-discovery or verified Recipes.
+General Unreal Engine knowledge intended to be supplied to a local LLM through RAG when using Unreal MCP.
+
+This document contains stable concepts such as coordinate conventions, Actor/Component/Asset relationships, Unreal reference types, shared Assets, and Material relationships.
+
+It is not a Tool catalogue and does not replace live Unreal MCP Tool Search or verified Recipes.
+
+
+Version: 1.0
+Purpose: Provide stable Unreal Engine concepts that help a local LLM interpret Unreal MCP tasks correctly without replacing live MCP schema discovery or verified Recipes.
 
 This knowledge describes general Unreal Engine concepts and reference
 relationships.
@@ -13,7 +18,6 @@ It is not an exhaustive list of Unreal MCP capabilities.
 Live Unreal MCP registry and schemas remain authoritative for current
 tools and argument structures.
 
-\
 
 **1. Unreal Engine Coordinate System**
 
@@ -37,13 +41,11 @@ X +100
 
 → move 100 Unreal units forward
 
-\
 
 Y +100
 
 → move 100 Unreal units to the right
 
-\
 
 Z +100
 
@@ -55,7 +57,6 @@ Unreal Engine commonly uses centimeters as its distance unit.
 
 Rotation values are generally expressed in degrees.
 
-\
 
 **2. Actor and Component Are Different Objects**
 
@@ -95,7 +96,6 @@ StaticMeshComponent reference.
 Do not assume that an Actor refPath can be used wherever a Component
 refPath is required.
 
-\
 
 **3. StaticMeshActor, StaticMeshComponent, and Static Mesh Asset Are
 Different**
@@ -120,19 +120,15 @@ Level Actor
 
     MCP_Test_Cube
 
-\
 
         ↓ contains
 
-\
 
 StaticMeshComponent
 
-\
 
         ↓ references
 
-\
 
 /Engine/BasicShapes/Cube.Cube
 
@@ -148,7 +144,6 @@ shared Static Mesh Asset.
 If several Actors use the same Static Mesh Asset, modifying that shared
 Asset may affect multiple Actors.
 
-\
 
 **4. Unreal References Have Different Meanings**
 
@@ -216,7 +211,6 @@ This identifies a class, not an Actor instance or Asset.
 Do not substitute one type of reference for another unless the receiving
 operation explicitly accepts it.
 
-\
 
 **5. Do Not Guess Component References**
 
@@ -240,7 +234,6 @@ and their names and structure should be obtained from Unreal Engine.
 
 This applies to Components in general, not only StaticMeshComponent.
 
-\
 
 **6. Content Browser Names and Unreal Object Paths Are Different**
 
@@ -268,7 +261,6 @@ Unreal object reference.
 
 Resolve the required internal reference when necessary.
 
-\
 
 **7. Built-in Basic Shape Assets**
 
@@ -288,7 +280,6 @@ Static Mesh Asset.
 Avoid modifying a shared Engine Asset when the requested change is
 intended to affect only one Level Actor.
 
-\
 
 **8. Actor-Specific Material Override and Shared Mesh Material Are
 Different**
@@ -330,7 +321,6 @@ Actor, these two levels must not be confused.
 The exact MCP operation used to perform the change should be determined
 from live MCP tools or a relevant verified Recipe.
 
-\
 
 **9. Material Assets and Material Expressions Are Different Objects**
 
@@ -359,7 +349,6 @@ references.
 Do not use a Material refPath where an Expression reference is required,
 or vice versa.
 
-\
 
 **10. Color Values May Be Represented as Linear Color Components**
 
@@ -382,13 +371,11 @@ Red:
 
 R=1.0 G=0.0 B=0.0 A=1.0
 
-\
 
 Green:
 
 R=0.0 G=1.0 B=0.0 A=1.0
 
-\
 
 Blue:
 
@@ -400,7 +387,6 @@ simply because both may be represented numerically.
 The exact property structure must still be checked against the live
 schema when modifying it.
 
-\
 
 **11. Shared Assets Can Affect Multiple Actors**
 
@@ -432,7 +418,6 @@ change only this Actor
 avoid modifying shared Assets unless the user explicitly intends a
 shared change.
 
-\
 
 **12. World Space and Local Space Are Different**
 
@@ -454,7 +439,6 @@ user provides world-level positions.
 For Level placement tasks, world-space coordinates are often the
 intended interpretation unless context indicates otherwise.
 
-\
 
 **13. Existing Object, Duplicate, and New Object Are Different
 Operations**
@@ -478,7 +462,6 @@ semantically equivalent.
 
 Preserve the user\'s requested intent.
 
-\
 
 **14. Material Editor UI May Not Immediately Reflect MCP Changes**
 
@@ -495,7 +478,6 @@ object/property state.
 If visual confirmation inside the Material Editor is necessary,
 reopening the Material Editor may refresh its displayed state.
 
-\
 
 **15. Basic Knowledge Is Not a Tool Catalogue**
 
@@ -512,13 +494,11 @@ Basic Knowledge
 
 → understand Unreal concepts
 
-\
 
 Verified Recipe
 
 → follow previously successful workflows
 
-\
 
 Live MCP
 
