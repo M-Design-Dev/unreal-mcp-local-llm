@@ -119,9 +119,44 @@ The series covers:
 Article links will be added here as they are published.
 
 Medium (English)
+
 Local LLMs Meet Unreal MCP Part 1
+
 Can a Local LLM Control Unreal Engine 5.8 Through MCP?
+
 https://medium.com/@murata_90507/local-llms-meet-unreal-mcp-part-1-9b652fed0f75
+
+Local LLMs Meet Unreal MCP Part 2
+
+Can System Prompts and RAG Make Unreal MCP Faster?
+
+https://medium.com/@murata_90507/local-llms-meet-unreal-mcp-part-2-597edd139f9b
+
+Local LLMs Meet Unreal MCP Part 3
+
+Keep the AI on Track with Verified Recipes
+
+https://medium.com/@murata_90507/local-llms-meet-unreal-mcp-part-3-eded3f43ae22
+
+note (Japanese)
+
+UnrealEngine 5.8 MCPをローカルAIで使ってみる Part I
+
+Unreal MCPをLM Studioから動かしてみる
+
+https://note.com/m_designx/n/n9b8851ba6b5f
+
+Unreal Engine 5.8 MCPをローカルAIで使ってみる Part 2
+
+System PromptとRAGで高速化を目指す
+
+https://note.com/m_designx/n/n8fe0302b01d0
+
+Unreal Engine 5.8 MCPをローカルAIで使ってみる Part 3
+
+成功レシピでAIを迷わせない
+
+https://note.com/m_designx/n/ncf63c07c0595
 
 ## Status
 
