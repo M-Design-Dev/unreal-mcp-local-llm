@@ -118,6 +118,11 @@ The series covers:
 
 Article links will be added here as they are published.
 
+Medium (English)
+Local LLMs Meet Unreal MCP Part 1
+Can a Local LLM Control Unreal Engine 5.8 Through MCP?
+https://medium.com/@murata_90507/local-llms-meet-unreal-mcp-part-1-9b652fed0f75
+
 ## Status
 
 This repository is based on experimental testing with Unreal Engine 5.8 Unreal MCP.
